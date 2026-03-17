@@ -1,0 +1,50 @@
+import scrapy
+
+
+class CarItem(scrapy.Item):
+    # Meta
+    listing_id = scrapy.Field()
+    url = scrapy.Field()
+    scraped_at = scrapy.Field()
+
+    # İlan Detayları
+    fiyat = scrapy.Field()
+    ilan_basligi = scrapy.Field()
+    sehir = scrapy.Field()
+    ilce = scrapy.Field()
+    ilan_aciklamasi = scrapy.Field()
+    ilan_tarihi = scrapy.Field()
+    marka = scrapy.Field()
+    seri = scrapy.Field()
+    model = scrapy.Field()
+    yil = scrapy.Field()
+    km = scrapy.Field()
+    vites_tipi = scrapy.Field()
+    yakit_tipi = scrapy.Field()
+    kasa_tipi = scrapy.Field()
+    renk = scrapy.Field()
+    motor_hacmi = scrapy.Field()
+    motor_gucu = scrapy.Field()
+    cekis = scrapy.Field()
+    arac_durumu = scrapy.Field()
+    ort_yakit_tuketimi = scrapy.Field()
+    yakit_deposu = scrapy.Field()
+    agir_hasarli = scrapy.Field()
+    boya_degisen = scrapy.Field()
+    takasa_uygun = scrapy.Field()
+    kimden = scrapy.Field()
+
+    # Boya ve Değişen Detayları
+    sag_arka_camurluk = scrapy.Field()
+    arka_kaput = scrapy.Field()
+    sol_arka_camurluk = scrapy.Field()
+    sag_arka_kapi = scrapy.Field()
+    sag_on_kapi = scrapy.Field()
+    tavan = scrapy.Field()
+    sol_arka_kapi = scrapy.Field()
+    sol_on_kapi = scrapy.Field()
+    sag_on_camurluk = scrapy.Field()
+    motor_kaputu = scrapy.Field()
+    sol_on_camurluk = scrapy.Field()
+    on_tampon = scrapy.Field()
+    arka_tampon = scrapy.Field()
