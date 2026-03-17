@@ -383,3 +383,4 @@ scrapy crawl otomobil
 ```
 
 Sonuçlar `output/` klasöründe JSON dosyası olarak kaydedilir.
+
