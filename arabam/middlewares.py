@@ -17,5 +17,5 @@ class UserAgentRotationMiddleware:
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:133.0) Gecko/20100101 Firefox/133.0",
     ]
 
-    def process_request(self, request):
+    def process_request(self, request, spider):
         request.headers["User-Agent"] = random.choice(self.USER_AGENTS)

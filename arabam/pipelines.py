@@ -4,7 +4,7 @@ from arabam.utils import clean_km, clean_price, clean_text
 
 
 class DataCleaningPipeline:
-    def process_item(self, item):
+    def process_item(self, item, spider):
         # Fiyat ve km temizleme
         if item.get("fiyat"):
             item["fiyat"] = clean_price(item["fiyat"])
@@ -42,7 +42,7 @@ class DuplicateFilterPipeline:
     def __init__(self):
         self.seen_ids = set()
 
-    def process_item(self, item):
+    def process_item(self, item, spider):
         listing_id = item.get("listing_id")
         if listing_id in self.seen_ids:
             raise DropItem(f"Tekrarlanan ilan: {listing_id}")
