@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual Environment
+venv/
+.venv/
+.env
+
+# Scrapy
+.scrapy/
+httpcache/
+crawls/
+logs/
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
